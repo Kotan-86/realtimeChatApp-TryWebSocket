@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Realtime Chat App</title>
+  <style>
+    body { font-family: sans-serif; }
+    #messages { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; margin-bottom: 10px; }
+    #chat-form { display: flex; }
+    #name-input { width: 100px; margin-right: 5px; }
+    #message-input { flex-grow: 1; margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Realtime Chat App</h1>
+  
+  <div id="messages"></div>
+
+  <form id="chat-form">
+    <input type="text" id="name-input" placeholder="名前" required>
+    <input type="text" id="message-input" placeholder="メッセージを入力..." required>
+    <button type="submit">送信</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
